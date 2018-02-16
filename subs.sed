@@ -4,3 +4,4 @@ s/\r$//
 # Remove células com valores nulos
 s/#nulo#//gI
 s/#ne#//gI
+s/#ni#//gI
