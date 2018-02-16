@@ -10,8 +10,10 @@ Na pasta *concatenados* se encontram os arquivos em formato csv no formato final
 
 Para importar para o MySQL pode-se utilizar o arquivo *candidatos.sql*.
 
+**Atenção**: o nome do database usado no sql está definido como candidatos.
+
 ```bash
-mysql -uuser -ppassword database < candidatos.sql
+mysql -uuser -ppassword < candidatos.sql
 ```
 
 ## Mapeamento dos csv
