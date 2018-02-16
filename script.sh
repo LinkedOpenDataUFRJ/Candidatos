@@ -32,7 +32,7 @@ for ano in {1996..2016..2}; do
     iconv -f "$encoding" -t utf-8 "$file.bkp" > "$file"
     rm "$file.bkp"
     # Faz pequenas correções nos dados
-    sed -f subs.sed -i "$file"
+    sed -r -f subs.sed -i "$file"
 done
 
 
