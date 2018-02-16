@@ -10,6 +10,8 @@ Na pasta *concatenados* se encontram os arquivos em formato csv no formato final
 
 Para importar para o MySQL pode-se utilizar o arquivo *candidatos.sql*.
 
+O arquivo candidatos.sql irá numa primeira fase importar todos os arquivos concatenados para a tabela candidatos e numa segunda fase irá tentar corrigir algumas inconsistências nos dados.
+
 **Atenção**: o nome do database usado no sql está definido como candidatos.
 
 ```bash
@@ -72,3 +74,9 @@ A seguinte tabela mostra um mapeamento dos csv onde cada célula representa a co
 | COD_SIT_TOT_TURNO              | 42   | 42   | 42   | 42   | 42   | 42   | 42   | 42   | 42   | 42   | 44   | 44   |
 | DESC_SIT_TOT_TURNO             | 43   | 43   | 43   | 43   | 43   | 43   | 43   | 43   | 43   | 43   | 45   | 45   |
 | NM_EMAIL                       | -    | -    | -    | -    | -    | -    | -    | -    | -    | 44   | 46   | 46   |
+
+## Diagrama SQL
+
+A imagem a seguir representa o diagrama da tabela após o arquivo candidatos.sql ser executado no mysql.
+
+![Diagrama da tabela candidatos](./diagram.svg)
